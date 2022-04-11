@@ -46,10 +46,13 @@ main{
 .mozaique{
     width: 70%;
     height: 70%;
+
+}
+
+.moza-portrait{
     background-color: black;
     border: 30px solid;
-    border-bottom: 170px solid;
-
+    border-bottom: 205px solid;
 }
 
 .tableau{
@@ -103,6 +106,68 @@ main{
 
 /* meme chose pour landscape */
 
+.moza-landscape{
+
+    display: grid;
+    grid-template: repeat(7, 1fr) / repeat(6, 1fr);
+    row-gap: 1%;
+    column-gap: 2%;
+}
+
+/* ajustement des images a la taille de la cellul, pas de debordement */
+
+.moza-landscape img{
+    width: 100%;
+    height: 100%;
+
+}
+
+
+
+
+/* on assigne chaque image à une case du haut vers le bas */
+
+
+
+
+.moza-landscape :nth-child(4){
+    grid-area: 5/1/6/5;
+}
+
+.moza-landscape :nth-child(1){
+    grid-area: 2/3/3/7;
+}
+
+.moza-landscape :nth-child(9){
+    grid-area: 3/3/4/7;
+}
+
+
+.moza-landscape :nth-child(3){
+    grid-area: 1/1/2/5;
+}
+
+.moza-landscape :nth-child(6){ 
+    grid-area: 2/1/4/3;    
+}
+
+.moza-landscape :nth-child(5){
+    grid-area: 7/1/8/5;
+}
+
+
+.moza-landscape :nth-child(7){
+    grid-area: 4/3/5/7;
+}
+
+.moza-landscape :nth-child(8){
+    grid-area: 5/5/7/7;
+}
+
+.moza-landscape :nth-child(2){
+    grid-area: 6/1/7/5;
+}
+
 
 
 .space{
@@ -110,6 +175,9 @@ main{
 }
 
 
+.separation{
+    margin: 10%;
+}
 /* -----Mise en forme du menu -----*/
 
 nav ul{
@@ -126,4 +194,5 @@ nav ul{
     align-items: center;
     justify-content: space-around;
     list-style-type:none;
+    margin:auto;
 }
