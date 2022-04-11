@@ -102,11 +102,9 @@ main{
 /* meme chose pour landscape */
 
 
-
 .space{
     margin: 10%;
 }
-
 
 /* -----Mise en forme du menu -----*/
 
@@ -124,4 +122,5 @@ nav ul{
     align-items: center;
     justify-content: space-around;
     list-style-type:none;
+    margin:auto;
 }
