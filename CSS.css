@@ -12,15 +12,18 @@
 
 /* -----Mise en forme du menu -----*/
 
-nav{
-    background-color: #F6A844;
+nav ul{
+    background-color: #3D858E;
     display:flex;
     flex-direction: row;
-    align-items: stretch;
+    justify-content: space-around;
+    list-style-type:none;
 }
 
-/* -----Mise en forme du site -----*/
-
-.mozaique{
-    
+/* -----Mise en forme du footer -----*/
+.réseaux{
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    list-style-type:none;
 }
