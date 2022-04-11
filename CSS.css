@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+
 /* -----mise en forme générale----- */
 
 * {
@@ -173,20 +175,24 @@ main{
     margin: 10%;
 }
 
+
 .separation{
     margin: 10%;
 }
 /* -----Mise en forme du menu -----*/
 
-nav{
-    background-color: #F6A844;
+nav ul{
+    background-color: #3D858E;
     display:flex;
     flex-direction: row;
-    align-items: stretch;
+    justify-content: space-around;
+    list-style-type:none;
 }
 
-/* -----Mise en forme du site -----*/
-
-.mozaique{
-    
+/* -----Mise en forme du footer -----*/
+.réseaux{
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    list-style-type:none;
 }
