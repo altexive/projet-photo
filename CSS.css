@@ -1,11 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
-
 /* -----mise en forme générale----- */
 
 * {
-    font-family: 'open-sans';
+    font-family: 'open sans';
     color: black;
     font-size: 18px;
     margin: 0;
@@ -35,6 +33,21 @@ main{
     column-gap: 2%;
 }
 
+#portraits{
+    font-weight: bold;
+    font-size: 72px;
+    margin-bottom: 5%;
+}
+
+#landscapes{
+    font-weight: bold;
+    font-size: 72px;
+    display: block;
+    margin-bottom: 5%;
+    text-align: center;
+    margin-top: 5%;
+ 
+}
 /* ajustement des images a la taille de la cellul, pas de debordement */
 
 .moza-portrait img{
@@ -57,7 +70,9 @@ main{
 
 .tableau{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
 
 }
 /* on assigne chaque image à une case du haut vers le bas */
@@ -101,6 +116,19 @@ main{
 
 .moza-portrait :nth-child(2){
     grid-area: 6/1/7/5;
+}
+
+.LOGONB1{
+    grid-area: 1/5/2/7;
+
+}
+
+.LOGONB2{
+    grid-area: 4/1/5/3;
+}
+
+.LOGONB3{
+    grid-area: 7/5/8/7;
 }
 
 
@@ -169,6 +197,18 @@ main{
 }
 
 
+.LOGOW1{
+    grid-area: 1/5/2/7;
+
+}
+
+.LOGOW2{
+    grid-area: 4/1/5/3;
+}
+
+.LOGOW3{
+    grid-area: 7/5/8/7;
+}
 
 .space{
     margin: 10%;
@@ -195,4 +235,10 @@ nav ul{
     justify-content: space-around;
     list-style-type:none;
     margin:auto;
+}
+
+.fa-solid{
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
