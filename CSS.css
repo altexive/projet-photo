@@ -10,10 +10,31 @@
     padding: 0;
 } 
 
-main{
 
+.menu-fixe{
+    position: fixed;
 }
 
+.bio-titre{
+    font-weight: bold;
+    font-size: 72px;
+    text-align: center;
+}
+
+h1{
+    font-weight: bold;
+    font-size: 72px;
+    text-align: center;
+}
+
+.menu-fixe{ width: 100%;}
+
+.menu-fixe ul{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+}
 /* ----- couleurs de reference :        orange :        #F6A844
                                         rouge pale :    #D1897B 
                                         bleu canard :   #3D858E
@@ -31,6 +52,12 @@ main{
     grid-template: repeat(7, 1fr) / repeat(6, 1fr);
     row-gap: 1%;
     column-gap: 2%;
+}
+
+#contact{
+    font-weight: bold;
+    font-size: 72px;
+    text-align: center;
 }
 
 #portraits{
@@ -79,10 +106,31 @@ main{
 
 
 
+/* image tout en haut */
+
+.moza-portrait :nth-child(3){
+    grid-area: 1/1/2/5;
+}
+
+
+
+
+
+
+
 
 .moza-portrait :nth-child(4){
     grid-area: 5/1/6/5;
 }
+
+.moza-portrait :nth-child(4):hover{
+
+}
+
+
+
+
+
 
 .moza-portrait :nth-child(1){
     grid-area: 2/3/3/7;
@@ -93,9 +141,6 @@ main{
 }
 
 
-.moza-portrait :nth-child(3){
-    grid-area: 1/1/2/5;
-}
 
 .moza-portrait :nth-child(5){ 
     grid-area: 2/1/4/3;    
@@ -242,3 +287,4 @@ nav ul{
     margin-top: 10px;
     margin-bottom: 10px;
 }
+
