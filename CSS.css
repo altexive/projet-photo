@@ -81,6 +81,7 @@ header{
 
 .moza-portrait{
     background-color: black;
+    color: black;
     border: 30px solid;
     border-bottom: 205px solid;
 }
@@ -221,6 +222,8 @@ header{
     column-gap: 2%;
 }
 .moza-landscape{
+    background-color: white;
+    border: 30px solid;
     border-bottom: 205px solid;
     border-color: white;
 
