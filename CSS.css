@@ -4,14 +4,14 @@
 
 *{
     font-family: 'open sans';
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     font-size: 18px;
     margin: 0;
     padding: 0;
 } 
 body{
-    background: rgb(246,168,68);
-    background: linear-gradient(0deg, rgba(246,168,68,1) 10%, rgba(229,153,94,0.38977597875087533) 50%, rgba(209,137,123,1) 90%);
+    background: rgba(246, 169, 68, 0.205);
+    background: linear-gradient(0deg, rgba(246,168,0.205) 10%, rgba(229, 152, 94, 0) 50%, rgba(209,137,123,1) 0.205);
 }
 
 .menu-fixe{
@@ -145,9 +145,7 @@ header{
     grid-area: 1/1/2/5;
 }
 
-
 /* 1ere image verticale */
-
 
 .moza-portrait :nth-child(5){ 
     grid-area: 2/1/4/3;    
@@ -166,7 +164,6 @@ header{
 }
 
 /* 4è image horizontale */
-
 
 .moza-portrait :nth-child(7){
     grid-area: 4/3/5/7;
@@ -198,7 +195,6 @@ header{
 
 /* logos */
 
-
 .LOGONB1{
     grid-area: 1/5/2/7;
 
@@ -226,9 +222,7 @@ header{
     border: 30px solid;
     border-bottom: 205px solid;
     border-color: white;
-
 }
-
 
 /* ajustement des images a la taille de la cellule, pour eviter debordement */
 
@@ -243,7 +237,6 @@ header{
 .moza-landscape :nth-child(3){
     grid-area: 1/1/2/5;
 }
-
 
 /* 1è image verticale */
 
@@ -352,17 +345,22 @@ nav ul li{
 
 .formulaire{
     margin-bottom: 1%;
+    display: flex;
+    justify-content: center;
+    width: 100%;
 }
+
+
 
 .formulaire ul{
     list-style-type: none;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+
+
 }
 
 .formulaire ul li{
-    margin-bottom: 0.5%;
+    width: 100%;
+    margin-bottom: 2%;
     display: flex;
     flex-direction: column;
 }
@@ -372,5 +370,24 @@ nav ul li{
 {
     width: 100%;
     color: black;
+    border-radius: 4px;
+    border: none;
+
+}
+
+.formulaire ul li button{
+    border: none;
+    color:white;
+    padding: 15px 32px;
+    text-align: center;
+    background-color: #3D858E;
+}
+
+.formulaire ul li button:hover{
+    background-color: #2b595f;
+}
+
+.formulaire ul li input::placeholder{
+    margin-left:10px;
 }
 
