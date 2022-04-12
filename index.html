@@ -9,18 +9,20 @@
 </head>
 <body>
     <header>
-        <H1>Ariette DESCHAMPS</H1>
-        <nav>
+
+        <nav class="menu-fixe">
             <ul>
-                <li><i class="fa-solid fa-book-open"></i><a href="#biographie"> BIOGRAPHIE</a></i></li>
-                <li><i class="fa-solid fa-image-portrait"></i><a href="#portraits"> PORTRAITS</a></i></li>
-                <li><i class="fa-solid fa-image"></i><a href="#landscapes"> LANDSCAPES</a></i></li>
-                <li><i class="fa-solid fa-square-phone"></i><a href="contact"> CONTACT</a></i></li>
+                <li><i class="fa-solid fa-book-open"></i><a href="#bio-titre" class=" txt-titre"> Biographie</a></i></li>
+                <li><i class="fa-solid fa-image-portrait"></i><a href="#portraits" class="txt-titre"> Portraits</a></i></li>
+                <li><i class="fa-solid fa-image"></i><a href="#landscapes" class="txt-titre"> Landscapes</a></i></li>
+                <li><i class="fa-solid fa-square-phone"></i><a href="#contact" class="txt-titre"> Contact</a></i></li>
             </ul>
         </nav>
     </header>
 
     <main>
+        <H1>Ariette DESCHAMPS</H1>
+        <h2 id="bio-titre">Biographie</h2>
 
         <div class="space">just some space</div>
         <div class="tableau">
@@ -43,8 +45,6 @@
                     <img src="ressources\Ariette-Deschamps----Logo-N-B.jpg" alt="logoNB3" class="LOGONB3 logo">
                 </div>
                 <div class="separation"> speration</div>
-                <div class="moza-landscape">
-                </div>  
                 <h2 id="landscapes">Landscapes</h2>
                 <div class="moza-landscape"> 
                     <img src="ressources\landscapes\landscape1.jpg" alt="landscape1">
@@ -56,9 +56,9 @@
                     <img src="ressources\landscapes\landscape7.jpg" alt="landscape7">
                     <img src="ressources\landscapes\landscape8.jpg" alt="landscape8">
                     <img src="ressources\landscapes\landscape9.jpg" alt="landscape9">
-                    <img src="ressources\Ariette-Deschamps----Logo.jpg" alt="LOGOW1" class="LOGOW1">
-                    <img src="ressources\Ariette-Deschamps----Logo.jpg" alt="LOGOW2" class="LOGOW2">
-                    <img src="ressources\Ariette-Deschamps----Logo.jpg" alt="LOGOW3" class="LOGOW3">
+                    <img src="ressources\Ariette-Deschamps----Logo.jpg" alt="LOGOW1" class="LOGOW1 logo">
+                    <img src="ressources\Ariette-Deschamps----Logo.jpg" alt="LOGOW2" class="LOGOW2 logo">
+                    <img src="ressources\Ariette-Deschamps----Logo.jpg" alt="LOGOW3" class="LOGOW3 logo">
                 </div>
             </div>
         </div>
@@ -66,6 +66,23 @@
     </main>
     
     <footer>
+        <form action="/my-handling-form-page" method="post">
+            <ul>
+             <li>
+               <label for="name">Name:</label>
+               <input type="text" id="name" name="user_name">
+             </li>
+             <li>
+               <label for="mail">E-mail:</label>
+               <input type="email" id="mail" name="user_email">
+             </li>
+             <li>
+               <label for="msg">Message:</label>
+               <textarea id="msg" name="user_message"></textarea>
+             </li>
+            </ul>
+           </form>
+        <h2 id="contact">Contact</h2>
         <ul class="réseaux">
         <li><i class="fa-brands fa-facebook"></i></li>   
         <li><i class="fa-brands fa-instagram"></i></li>

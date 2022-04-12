@@ -10,10 +10,31 @@
     padding: 0;
 } 
 
-main{
 
+.menu-fixe{
+    position: fixed;
 }
 
+#bio-titre{
+    font-weight: bold;
+    font-size: 72px;
+    text-align: center;
+}
+
+h1{
+    font-weight: bold;
+    font-size: 72px;
+    text-align: center;
+}
+
+.menu-fixe{ width: 100%;}
+
+.menu-fixe ul{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+}
 /* ----- couleurs de reference :        orange :        #F6A844
                                         rouge pale :    #D1897B 
                                         bleu canard :   #3D858E
@@ -26,11 +47,16 @@ main{
 /* creation de la grid*/
 
 .moza-portrait{
-
     display: grid;
-    grid-template: repeat(7, 1fr) / repeat(6, 1fr);
+    grid-template: repeat(7, 1/7%) / repeat(6, 1/6%);
     row-gap: 1%;
     column-gap: 2%;
+}
+
+#contact{
+    font-weight: bold;
+    font-size: 72px;
+    text-align: center;
 }
 
 #portraits{
@@ -53,8 +79,14 @@ main{
 .moza-portrait img{
     width: 100%;
     height: 100%;
-
 }
+
+.moza-portrait img:not(.logo):hover,
+.moza-landscape img:not(.logo):hover  {
+    filter: opacity(40%);
+}
+
+
 
 .mozaique{
     width: 70%;
@@ -78,45 +110,67 @@ main{
 /* on assigne chaque image à une case du haut vers le bas */
 
 
+/* ordre des images dans le tableau en partant du haut*/
 
-
-.moza-portrait :nth-child(4){
-    grid-area: 5/1/6/5;
-}
-
-.moza-portrait :nth-child(1){
-    grid-area: 2/3/3/7;
-}
-
-.moza-portrait :nth-child(9){
-    grid-area: 3/3/4/7;
-}
-
+/* 1ere image horizontale */
 
 .moza-portrait :nth-child(3){
     grid-area: 1/1/2/5;
 }
 
+
+/* 1ere image verticale */
+
+
 .moza-portrait :nth-child(5){ 
     grid-area: 2/1/4/3;    
 }
 
-.moza-portrait :nth-child(6){
-    grid-area: 7/1/8/5;
+/* 2nde image horizontale */ 
+
+.moza-portrait :nth-child(1){
+    grid-area: 2/3/3/7;
 }
+
+/* 3è image horizontale */
+
+.moza-portrait :nth-child(9){
+    grid-area: 3/3/4/7;
+}
+
+/* 4è image horizontale */
 
 
 .moza-portrait :nth-child(7){
     grid-area: 4/3/5/7;
 }
 
+/* 2nde image verticale */
+
 .moza-portrait :nth-child(8){
     grid-area: 5/5/7/7;
 }
 
+/* 5è image horizontale */
+
+.moza-portrait :nth-child(4){
+    grid-area: 5/1/6/5;
+}
+
+/*6è image horizontale */
+
 .moza-portrait :nth-child(2){
     grid-area: 6/1/7/5;
 }
+
+/* 7è image horizontale */
+
+.moza-portrait :nth-child(6){
+    grid-area: 7/1/8/5;
+}
+
+/* logos */
+
 
 .LOGONB1{
     grid-area: 1/5/2/7;
@@ -131,7 +185,6 @@ main{
     grid-area: 7/5/8/7;
 }
 
-
 /* meme chose pour landscape */
 
 .moza-landscape{
@@ -142,60 +195,70 @@ main{
     column-gap: 2%;
 }
 
-/* ajustement des images a la taille de la cellul, pas de debordement */
+/* ajustement des images a la taille de la cellule, pour eviter debordement */
 
 .moza-landscape img{
     width: 100%;
     height: 100%;
-
 }
-
-
-
 
 /* on assigne chaque image à une case du haut vers le bas */
-
-
-
-
-.moza-landscape :nth-child(4){
-    grid-area: 5/1/6/5;
-}
-
-.moza-landscape :nth-child(1){
-    grid-area: 2/3/3/7;
-}
-
-.moza-landscape :nth-child(9){
-    grid-area: 3/3/4/7;
-}
-
+/* 1è image horizontale */
 
 .moza-landscape :nth-child(3){
     grid-area: 1/1/2/5;
 }
 
+
+/* 1è image verticale */
+
 .moza-landscape :nth-child(6){ 
     grid-area: 2/1/4/3;    
 }
 
-.moza-landscape :nth-child(5){
-    grid-area: 7/1/8/5;
+/* 2è image horizontale */
+
+.moza-landscape :nth-child(1){
+    grid-area: 2/3/3/7;
 }
 
+/* 3è image horizontale */
+
+.moza-landscape :nth-child(9){
+    grid-area: 3/3/4/7;
+}
+
+/* 4è image horizontale */
 
 .moza-landscape :nth-child(7){
     grid-area: 4/3/5/7;
 }
 
+/* 2è image verticale */
+
 .moza-landscape :nth-child(8){
     grid-area: 5/5/7/7;
 }
+
+/* 5è image horizontale */
+
+.moza-landscape :nth-child(4){
+    grid-area: 5/1/6/5;
+}
+
+/* 6è image horizontale */
 
 .moza-landscape :nth-child(2){
     grid-area: 6/1/7/5;
 }
 
+/* 7è image horizontale */
+
+.moza-landscape :nth-child(5){
+    grid-area: 7/1/8/5;
+}
+
+/* logos */
 
 .LOGOW1{
     grid-area: 1/5/2/7;
@@ -210,14 +273,7 @@ main{
     grid-area: 7/5/8/7;
 }
 
-.space{
-    margin: 10%;
-}
 
-
-.separation{
-    margin: 10%;
-}
 /* -----Mise en forme du menu -----*/
 
 nav ul{
@@ -244,5 +300,9 @@ nav ul{
     font-size: 30px;
     margin-top: 10px;
     margin-bottom: 10px;
+}
+
+.txt-titre{
+    visibility: hidden;
 }
 
