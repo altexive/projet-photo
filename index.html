@@ -11,10 +11,10 @@
     <header>
         <nav class="menu-fixe">
             <ul>
-                <li><i class="fa-solid fa-book-open"></i><a href="#bio-titre" class=" txt-titre">BIOGRAPHIE</a></i></li>
-                <li><i class="fa-solid fa-image-portrait"></i><a href="#portraits" class="txt-titre"> Portraits</a></i></li>
-                <li><i class="fa-solid fa-image"></i><a href="#landscapes" class="txt-titre"> Landscapes</a></i></li>
-                <li><i class="fa-solid fa-square-phone"></i><a href="#contact" class="txt-titre"> Contact</a></i></li>
+                <li><i class="fa-solid fa-book-open"></i><a href="#bio-titre" class=" txt-titre"> BIOGRAPHIE</a></i></li>
+                <li><i class="fa-solid fa-image-portrait"></i><a href="#portraits" class="txt-titre"> PORTRAITS</a></i></li>
+                <li><i class="fa-solid fa-image"></i><a href="#landscapes" class="txt-titre"> LANDSCAPES</a></i></li>
+                <li><i class="fa-solid fa-square-phone"></i><a href="#contact" class="txt-titre"> CONTACT</a></i></li>
             </ul>
         </nav>
     </header>
@@ -43,6 +43,9 @@
             </div>
             <img class="photo-2" src="/ressources/photographer2.jpg" alt="Ariette">
         </Div>
+            <p>Ariette Deschamps</p>
+        </div>
+
         <div class="tableau">
             <h2 id="portraits">Portraits</h2>
 
@@ -83,29 +86,31 @@
     
     <footer>
         <h2 id="contact">Contact</h2>
-        <form action="/my-handling-form-page" method="post" class="formulaire">
-            <ul>
-                <li>
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="user_name">
-                </li>
-                <li>
-                    <label for="mail">E-mail:</label>
-                    <input type="email" id="mail" name="user_email">
-                </li>
-                <li>
-                    <label for="msg">Message:</label>
-                    <textarea id="msg" name="user_message"></textarea>
-                </li>
-            </ul>
-        </form>
-
+            <form action="/my-handling-form-page" method="post" class="formulaire">
+                <ul>
+                    <li>
+                        <label for="name"></label>
+                        <input type="text" id="name" name="user_name" placeholder="Name">
+                    </li>
+                    <li>
+                        <label for="mail"></label>
+                        <input type="email" id="mail" name="user_email" placeholder="E-mail">
+                    </li>
+                    <li>
+                        <label for="msg"></label>
+                        <textarea id="msg" name="user_message" placeholder="Message"></textarea>
+                    </li>
+                    <li>
+                        <button>Envoyer</button>
+                    </li>
+                </ul>
+            </form>
         <ul class="réseaux">
-        <li><i class="fa-brands fa-facebook"></i></li>   
-        <li><i class="fa-brands fa-instagram"></i></li>
-        <li><i class="fa-brands fa-pinterest"></i></li>
-        <li><i class="fa-brands fa-twitter"></i></li>
-        <li><i class="fa-brands fa-linkedin"></i></li>
+            <li><i class="fa-brands fa-facebook"></i></li>   
+            <li><i class="fa-brands fa-instagram"></i></li>
+            <li><i class="fa-brands fa-pinterest"></i></li>
+            <li><i class="fa-brands fa-twitter"></i></li>
+            <li><i class="fa-brands fa-linkedin"></i></li>
         </ul>
     </footer>
     <script src="https://kit.fontawesome.com/76434f6c5a.js" crossorigin="anonymous"></script>
