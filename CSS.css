@@ -85,7 +85,7 @@ header{
     border: 30px solid;
     border-bottom: 205px solid;
 }
-/* taille et mise en forme des titres*/
+/* taille et mise en forme des titres */
 #contact{
     font-weight: bold;
     font-size: 72px;
@@ -133,8 +133,6 @@ header{
 .moza-landscape img:not(.logo):hover  {
     filter: opacity(40%);
 }
-
-
 
 
 /* ordre des images dans le tableau portrait en partant du haut*/
@@ -313,11 +311,20 @@ header{
 
 nav ul{
     background-color: #3D858E;
-    box-shadow: 10px 3px 3px #b3b2b2 ;
+    box-shadow: 10px 3px 3px #3D858E;
     display:flex;
     flex-direction: row;
     justify-content: space-around;
     list-style-type:none;
+}
+nav ul li{
+  display: flex; 
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
+  margin-bottom: 25px;
+
 }
 
 /* -----Mise en forme du footer -----*/
@@ -335,8 +342,7 @@ nav ul{
 
 .fa-solid{
     font-size: 30px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+  
 }
 
 /* mise en forme formulaire */
