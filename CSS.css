@@ -297,9 +297,12 @@ nav ul{
 .réseaux{
     display:flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     list-style-type:none;
     margin:auto;
+}
+.fa-brands{
+    margin: 5px;
 }
 
 .fa-solid{
