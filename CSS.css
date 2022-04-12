@@ -10,7 +10,8 @@
     padding: 0;
 } 
 body{
-    background-color: #D1897B;
+    background: rgb(246,168,68);
+    background: linear-gradient(0deg, rgba(246,168,68,1) 10%, rgba(229,153,94,0.38977597875087533) 50%, rgba(209,137,123,1) 90%);
 }
 
 .menu-fixe{
@@ -91,6 +92,7 @@ header{
     font-size: 72px;
     text-align: center;
     margin-bottom: 5%;
+    margin-top: 5%;
 }
 
 #portraits{
@@ -331,6 +333,7 @@ nav ul{
 }
 .fa-brands{
     margin: 5px;
+    margin-bottom: 120%;
 }
 
 .fa-solid{
@@ -342,7 +345,7 @@ nav ul{
 /* mise en forme formulaire */
 
 .formulaire{
-    margin-bottom: 2%;
+    margin-bottom: 1%;
 }
 
 .formulaire ul{
@@ -358,6 +361,10 @@ nav ul{
     flex-direction: column;
 }
 
-.formulaire ul li input{
+.formulaire ul li input,
+.formulaire ul li textarea
+{
     width: 100%;
+    color: black;
 }
+
