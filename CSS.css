@@ -1,21 +1,40 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
-
 /* -----mise en forme générale----- */
 
 * {
-    font-family: 'open-sans';
+    font-family: 'open sans';
     color: black;
     font-size: 18px;
     margin: 0;
     padding: 0;
 } 
 
-main{
 
+.menu-fixe{
+    position: fixed;
 }
 
+.bio-titre{
+    font-weight: bold;
+    font-size: 72px;
+    text-align: center;
+}
+
+h1{
+    font-weight: bold;
+    font-size: 72px;
+    text-align: center;
+}
+
+.menu-fixe{ width: 100%;}
+
+.menu-fixe ul{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+}
 /* ----- couleurs de reference :        orange :        #F6A844
                                         rouge pale :    #D1897B 
                                         bleu canard :   #3D858E
@@ -35,6 +54,27 @@ main{
     column-gap: 2%;
 }
 
+#contact{
+    font-weight: bold;
+    font-size: 72px;
+    text-align: center;
+}
+
+#portraits{
+    font-weight: bold;
+    font-size: 72px;
+    margin-bottom: 5%;
+}
+
+#landscapes{
+    font-weight: bold;
+    font-size: 72px;
+    display: block;
+    margin-bottom: 5%;
+    text-align: center;
+    margin-top: 5%;
+ 
+}
 /* ajustement des images a la taille de la cellul, pas de debordement */
 
 .moza-portrait img{
@@ -57,10 +97,24 @@ main{
 
 .tableau{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
 
 }
 /* on assigne chaque image à une case du haut vers le bas */
+
+
+
+/* image tout en haut */
+
+.moza-portrait :nth-child(3){
+    grid-area: 1/1/2/5;
+}
+
+
+
+
 
 
 
@@ -68,6 +122,15 @@ main{
 .moza-portrait :nth-child(4){
     grid-area: 5/1/6/5;
 }
+
+.moza-portrait :nth-child(4):hover{
+
+}
+
+
+
+
+
 
 .moza-portrait :nth-child(1){
     grid-area: 2/3/3/7;
@@ -78,9 +141,6 @@ main{
 }
 
 
-.moza-portrait :nth-child(3){
-    grid-area: 1/1/2/5;
-}
 
 .moza-portrait :nth-child(5){ 
     grid-area: 2/1/4/3;    
@@ -101,6 +161,19 @@ main{
 
 .moza-portrait :nth-child(2){
     grid-area: 6/1/7/5;
+}
+
+.LOGONB1{
+    grid-area: 1/5/2/7;
+
+}
+
+.LOGONB2{
+    grid-area: 4/1/5/3;
+}
+
+.LOGONB3{
+    grid-area: 7/5/8/7;
 }
 
 
@@ -169,6 +242,18 @@ main{
 }
 
 
+.LOGOW1{
+    grid-area: 1/5/2/7;
+
+}
+
+.LOGOW2{
+    grid-area: 4/1/5/3;
+}
+
+.LOGOW3{
+    grid-area: 7/5/8/7;
+}
 
 .space{
     margin: 10%;
@@ -196,3 +281,10 @@ nav ul{
     list-style-type:none;
     margin:auto;
 }
+
+.fa-solid{
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
