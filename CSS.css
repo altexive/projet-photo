@@ -47,9 +47,8 @@ h1{
 /* creation de la grid*/
 
 .moza-portrait{
-
     display: grid;
-    grid-template: repeat(7, 1fr) / repeat(6, 1fr);
+    grid-template: repeat(7, 1/7 %) / repeat(6, 1/6);
     row-gap: 1%;
     column-gap: 2%;
 }
@@ -80,8 +79,14 @@ h1{
 .moza-portrait img{
     width: 100%;
     height: 100%;
-
 }
+
+.moza-portrait img:not(.logo):hover,
+.moza-landscape img:not(.logo):hover  {
+    filter: opacity(40%);
+}
+
+
 
 .mozaique{
     width: 70%;
@@ -192,9 +197,7 @@ h1{
 .moza-landscape img{
     width: 100%;
     height: 100%;
-
 }
-
 
 
 
