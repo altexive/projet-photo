@@ -2,14 +2,16 @@
 
 /* -----mise en forme générale----- */
 
-* {
+*{
     font-family: 'open sans';
-    color: black;
+    color: rgb(255, 255, 255);
     font-size: 18px;
     margin: 0;
     padding: 0;
 } 
-
+body{
+    background-color: #D1897B;
+}
 
 .menu-fixe{
     width: 100%;
@@ -22,6 +24,24 @@
     align-items: center;
 }
 
+.bio-texte{
+    text-align: center;
+    text-align: justify;
+    padding: 7%;
+}
+
+.bio-texte p{
+    margin-top: 3%;
+}
+
+
+h1{
+    font-weight: bold;
+    font-size: 72px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 10px rgb(72, 71, 71);
+}
 
 
 .menu-fixe ul{
@@ -93,12 +113,7 @@ header{
     text-align: center;
 }
 
-h1{
-    font-weight: bold;
-    font-size: 72px;
-    text-align: center;
-    
-}
+
 /* ajustement des images a la taille de la cellul, pas de debordement */
 
 .moza-portrait img{
@@ -295,6 +310,7 @@ h1{
 
 nav ul{
     background-color: #3D858E;
+    box-shadow: 10px 3px 3px #b3b2b2 ;
     display:flex;
     flex-direction: row;
     justify-content: space-around;
