@@ -12,22 +12,17 @@
 
 
 .menu-fixe{
+    width: 100%;
     position: fixed;
 }
 
-#bio-titre{
-    font-weight: bold;
-    font-size: 72px;
-    text-align: center;
+.tableau{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-h1{
-    font-weight: bold;
-    font-size: 72px;
-    text-align: center;
-}
 
-.menu-fixe{ width: 100%;}
 
 .menu-fixe ul{
     width: 100%;
@@ -35,13 +30,22 @@ h1{
     justify-content: center;
     justify-content: space-around;
 }
+
+.espacement{
+    margin:10%;
+}
+
+main{
+    height: 100%;
+}
+
+header{
+    height: 100%;
+}
 /* ----- couleurs de reference :        orange :        #F6A844
                                         rouge pale :    #D1897B 
                                         bleu canard :   #3D858E
 */
-
-/* taille des parents*/
-
 
 
 /* creation de la grid*/
@@ -54,16 +58,18 @@ h1{
 }
 
 /*background black */
+
 .moza-portrait{
     background-color: black;
     border: 30px solid;
     border-bottom: 205px solid;
 }
-
+/* taille et mise en forme des titres*/
 #contact{
     font-weight: bold;
     font-size: 72px;
     text-align: center;
+    margin-bottom: 5%;
 }
 
 #portraits{
@@ -79,7 +85,19 @@ h1{
     margin-bottom: 5%;
     text-align: center;
     margin-top: 5%;
- 
+}
+
+#bio-titre{
+    font-weight: bold;
+    font-size: 72px;
+    text-align: center;
+}
+
+h1{
+    font-weight: bold;
+    font-size: 72px;
+    text-align: center;
+    
 }
 /* ajustement des images a la taille de la cellul, pas de debordement */
 
@@ -88,6 +106,13 @@ h1{
     height: 100%;
 }
 
+.mozaique{
+    width: 70%;
+    height: 70%;
+
+}
+/* opacité des images lors du hover */
+
 .moza-portrait img:not(.logo):hover,
 .moza-landscape img:not(.logo):hover  {
     filter: opacity(40%);
@@ -95,25 +120,8 @@ h1{
 
 
 
-.mozaique{
-    width: 70%;
-    height: 70%;
 
-}
-
-
-
-.tableau{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-
-}
-/* on assigne chaque image à une case du haut vers le bas */
-
-
-/* ordre des images dans le tableau en partant du haut*/
+/* ordre des images dans le tableau portrait en partant du haut*/
 
 /* 1ere image horizontale */
 
@@ -294,6 +302,7 @@ nav ul{
 }
 
 /* -----Mise en forme du footer -----*/
+/* logos réseaux */
 .réseaux{
     display:flex;
     align-items: center;
@@ -309,11 +318,27 @@ nav ul{
     font-size: 30px;
     margin-top: 10px;
     margin-bottom: 10px;
-    color: white;
 }
 
-.fa-solid:hover{
-    display: none;
+/* mise en forme formulaire */
+
+.formulaire{
+    margin-bottom: 2%;
 }
 
+.formulaire ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+.formulaire ul li{
+    margin-bottom: 0.5%;
+    display: flex;
+    flex-direction: column;
+}
+
+.formulaire ul li input{
+    width: 100%;
+}
