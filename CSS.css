@@ -53,6 +53,13 @@ h1{
     column-gap: 2%;
 }
 
+/*background black */
+.moza-portrait{
+    background-color: black;
+    border: 30px solid;
+    border-bottom: 205px solid;
+}
+
 #contact{
     font-weight: bold;
     font-size: 72px;
@@ -94,11 +101,7 @@ h1{
 
 }
 
-.moza-portrait{
-    background-color: black;
-    border: 30px solid;
-    border-bottom: 205px solid;
-}
+
 
 .tableau{
     display: flex;
@@ -194,6 +197,12 @@ h1{
     row-gap: 1%;
     column-gap: 2%;
 }
+.moza-landscape{
+    border-bottom: 205px solid;
+    border-color: white;
+
+}
+
 
 /* ajustement des images a la taille de la cellule, pour eviter debordement */
 
@@ -301,9 +310,11 @@ nav ul{
     font-size: 30px;
     margin-top: 10px;
     margin-bottom: 10px;
+    color: white;
 }
 
-.txt-titre{
-    visibility: hidden;
+.fa-solid:hover{
+    display: none;
 }
+
 
