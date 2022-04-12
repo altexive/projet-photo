@@ -313,7 +313,7 @@ header{
 
 nav ul{
     background-color: #3D858E;
-    box-shadow: 10px 3px 3px #3D858E;
+    box-shadow: 3px 3px #7e8888c7;
     display:flex;
     flex-direction: row;
     justify-content: space-around;
