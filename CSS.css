@@ -160,7 +160,7 @@ header{
     background-color: black;
     color: black;
     border: 30px solid;
-    border-bottom: 205px solid;
+    border-bottom: 290px solid;
 }
 /* taille et mise en forme des titres */
 
@@ -173,7 +173,6 @@ header{
 
 #portraits{
     font-size: 65px;
-    font
     margin-bottom: 2%;
     margin-top: 7%;
 }
@@ -281,7 +280,7 @@ header{
 .moza-landscape{
     background-color: #f6a94459;
     border: 30px solid ;
-    border-bottom: 205px solid;
+    border-bottom: 290px solid;
     border-color:#f6a94400 ;
 }
 
