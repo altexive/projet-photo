@@ -127,27 +127,28 @@ header{
 #contact{
     font-size: 65px;
     text-align: center;
-    margin-bottom: 5%;
-    margin-top: 15%;
+    margin-bottom: 4%;
+    margin-top: 10%;
 }
 
 #portraits{
     font-size: 65px;
-    margin-bottom: 5%;
-    margin-top: 20%;
+    margin-bottom: 4%;
+    margin-top: 12%;
 }
 
 #landscapes{
     font-size: 65px;
     display: block;
-    margin-bottom: 5%;
+    margin-bottom: 4%;
     text-align: center;
     margin-top: 25%;
 }
 
 #bio-titre{
     font-size: 65px;
-    text-align: center;
+    text-align: left;
+    margin-bottom: 10%;
 }
 
 
@@ -393,4 +394,3 @@ header{
     margin-top: 10%;
 }
 
-h2{font-weight: 400;}
