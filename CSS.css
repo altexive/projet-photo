@@ -28,12 +28,30 @@
 .bio-texte{
     text-align: center;
     text-align: justify;
-    padding: 7%;
+    padding: 4%;
+    padding-bottom: 0;
+    padding-top: 0;
     width: 50%;
 }
 
 .bio-texte p{
     margin-top: 3%;
+}
+
+.block-bio
+{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    align-items: stretch;
+    
+}
+.photo-2{
+    width: 50%;
+    margin-top:1.5%;
+    object-fit: cover;
 }
 
 .bio-titre{
@@ -46,12 +64,13 @@ h1{
     text-align: center;
     color: rgb(0, 0, 0);
     text-shadow: 1px 1px 3px rgb(72, 71, 71);
+    
 }
 
 .sous-titre{
     text-align: center;
-    font-size: 30px
-    ;
+    font-size: 30px;
+    margin-bottom: 7%;
 }
 .sous-titre a{
     font-size: 30px;
@@ -136,14 +155,14 @@ header{
 #contact{
     font-size: 65px;
     text-align: center;
-    margin-bottom: 4%;
-    margin-top: 10%;
+    margin-bottom: 2%;
+    margin-top: 8%;
 }
 
 #portraits{
     font-size: 65px;
-    margin-bottom: 4%;
-    margin-top: 12%;
+    margin-bottom: 2%;
+    margin-top: 7%;
 }
 
 #landscapes{
@@ -151,7 +170,7 @@ header{
     display: block;
     margin-bottom: 4%;
     text-align: center;
-    margin-top: 25%;
+    margin-top: 9%;
 }
 
 #bio-titre{
@@ -367,21 +386,6 @@ header{
     border: 2px solid #3D858E;
     
 }
-.block-bio
-{
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    height: 100%;
-    justify-content: space-between;
-    align-items: center;
-    
-}
-.photo-2{
-    width: 60%;
-    height: 60%;
-    margin: 7%;
-}
 
 .formulaire ul li button{
     border: none;
@@ -400,5 +404,5 @@ header{
 
 
 .espacement{
-    margin-top: 10%;
+    margin-top: 14%;
 }
