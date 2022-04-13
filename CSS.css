@@ -65,6 +65,9 @@ h1{
     text-align: center;
     color: rgb(0, 0, 0);
     text-shadow: 1px 1px 3px rgb(72, 71, 71);
+    color: #D1897b;
+    opacity: 60%;
+    letter-spacing: 8px;
     
 }
 
@@ -72,10 +75,15 @@ h1{
     text-align: center;
     font-size: 30px;
     margin-bottom: 7%;
+    color: #D1897b;
+    opacity: 60%;
+    letter-spacing: 8px;
 }
 .sous-titre a{
     font-size: 30px;
     text-decoration: none;
+    color: #D1897b;
+    letter-spacing: 8px;
 }
 
 .sous-titre a:hover{
@@ -104,7 +112,7 @@ header{
 
 /*mise en forme de la boite etmise en forme flex des ensemble icone+texte */
 .menu-fixe ul{
-    background-color: #3D858E;
+    background-color: #D1897b;
     display:flex;
     flex-direction: row;
     justify-content: space-around;
@@ -157,8 +165,8 @@ header{
 /*background black (la margin est pour compenser mon incompétence en css grid car le parent est plus petit que la grid a cause du gap, le background black ne descend pas jusqu'en bas*/
 
 .moza-portrait{
-    background-color: black;
-    color: black;
+    background-color: #3d858e;
+    color: #3d858e;
     border: 30px solid;
     border-bottom: 290px solid;
 }
@@ -169,26 +177,37 @@ header{
     text-align: center;
     margin-bottom: 2%;
     margin-top: 8%;
+     color: #3D858E;
+    opacity: 60%;
+    letter-spacing: 8px;
 }
 
 #portraits{
     font-size: 65px;
-    margin-bottom: 2%;
+    margin-bottom: 2.5%;
     margin-top: 7%;
+    color: #3D858E;
+    opacity: 60%;
+    letter-spacing: 8px;
 }
 
 #landscapes{
     font-size: 65px;
     display: block;
-    margin-bottom: 4%;
+    margin-bottom: 2.5%;
     text-align: center;
     margin-top: 9%;
+    color: #f6a844;
+    opacity: 60%;
+    letter-spacing: 8px;
 }
 
 #bio-titre{
     font-size: 65px;
     text-align: left;
     margin-bottom: 14%;
+    opacity: 60%;
+    letter-spacing: 8px;
 }
 
 
@@ -397,6 +416,7 @@ header{
     color: black;
     border-radius: 5px;
     border: 2px solid #3D858E;
+    opacity: 70%;
     
 }
 .formulaire ul li button{
@@ -407,10 +427,13 @@ header{
     background-color: #3D858E;
     border-radius: 25px;
     margin-top: 10%;
+    opacity: 70%;
+    letter-spacing: 8px;
 }
 
 .formulaire ul li button:hover{
-    background-color: #2b595f;
+    background-color: #3D858E;
+    opacity: 100%;
 }
 
 /* gère l'espacement entre le h1 et le haut de la page*/
