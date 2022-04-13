@@ -173,6 +173,7 @@ header{
 
 #portraits{
     font-size: 65px;
+    font
     margin-bottom: 2%;
     margin-top: 7%;
 }
@@ -200,7 +201,7 @@ header{
 }
 
 .mozaique{
-    width: 70%;
+    width: 100%;
     height: 108%;
 }
 /* opacité des images lors du hover */
