@@ -15,6 +15,7 @@
 .menu-fixe{
     width: 100%;
     position: fixed;
+    z-index: 1;
 }
 
 
@@ -77,6 +78,13 @@ h1{
     text-decoration: none;
 }
 
+.sous-titre a:hover{
+    font-size: 30px;
+    text-decoration: none;
+    font-weight: 500;
+
+}
+
 .menu-fixe ul{
     width: 100%;
     display: flex;
@@ -111,6 +119,7 @@ header{
     align-items: center;
     margin-top: 25px;
     margin-bottom: 25px;
+    width: 6%;
 }
 
 /* mise en forme (taille+couleur des icones) */
@@ -123,8 +132,12 @@ header{
 .menu-fixe ul li a{
     color: white;
     text-decoration: none;
+    margin-top: 2%;
 }
 
+.menu-fixe ul li a:hover{
+    font-weight: 500;
+}
 /* ----- couleurs de reference :        orange :        #F6A844
                                         rouge pale :    #D1897B 
                                         bleu canard :   #3D858E
@@ -175,7 +188,7 @@ header{
 #bio-titre{
     font-size: 65px;
     text-align: left;
-    margin-bottom: 10%;
+    margin-bottom: 14%;
 }
 
 
@@ -353,6 +366,7 @@ header{
 
 
 /* mise en forme formulaire */
+/* flex du conteneur*/
 
 .formulaire{
     margin-bottom: 1%;
@@ -362,13 +376,13 @@ header{
 }
 
 
-
+/* on vire les puces */
 .formulaire ul{
     list-style-type: none;
-    
-    
+   
 }
 
+/**/
 .formulaire ul li{
     width: 100%;
     margin-bottom: 5%;
@@ -385,7 +399,6 @@ header{
     border: 2px solid #3D858E;
     
 }
-
 .formulaire ul li button{
     border: none;
     color:white;
@@ -400,7 +413,7 @@ header{
     background-color: #2b595f;
 }
 
-
+/* gère l'espacement entre le h1 et le haut de la page*/
 
 .espacement{
     margin-top: 14%;
